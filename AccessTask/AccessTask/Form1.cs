@@ -23,14 +23,26 @@ namespace AccessTask
             InitializeComponent();
         }
 
-        private void Btn_submit_Click(object sender, EventArgs e)
+
+        private void Data_table_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void Btn_search_Click(object sender, EventArgs e)
         {
             
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                conn = new OleDbConnection(conn_string);
+                conn.Open();
+            }
+            catch (Exception exception) { MessageBox.Show(exception.Message); }
         }
     }
 }

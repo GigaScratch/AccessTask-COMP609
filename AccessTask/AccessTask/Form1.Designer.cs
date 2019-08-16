@@ -68,6 +68,7 @@
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(94, 20);
             this.tb_name.TabIndex = 2;
+            this.tb_name.TextChanged += new System.EventHandler(this.Tb_name_TextChanged);
             // 
             // tb_id
             // 
@@ -103,23 +104,28 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(478, 229);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(578, 229);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // dtb_table
             // 
+            this.dtb_table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtb_table.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtb_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtb_table.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtb_table.Location = new System.Drawing.Point(2, 2);
             this.dtb_table.Margin = new System.Windows.Forms.Padding(2);
             this.dtb_table.Name = "dtb_table";
+            this.dtb_table.ReadOnly = true;
             this.dtb_table.RowHeadersWidth = 82;
             this.dtb_table.RowTemplate.Height = 33;
-            this.dtb_table.Size = new System.Drawing.Size(474, 110);
+            this.dtb_table.Size = new System.Drawing.Size(574, 110);
             this.dtb_table.TabIndex = 0;
             // 
             // dtb_id
             // 
+            this.dtb_id.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dtb_id.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dtb_id.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtb_id.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtb_id.Location = new System.Drawing.Point(2, 116);
@@ -127,14 +133,14 @@
             this.dtb_id.Name = "dtb_id";
             this.dtb_id.RowHeadersWidth = 82;
             this.dtb_id.RowTemplate.Height = 33;
-            this.dtb_id.Size = new System.Drawing.Size(474, 111);
+            this.dtb_id.Size = new System.Drawing.Size(574, 111);
             this.dtb_id.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(478, 301);
+            this.ClientSize = new System.Drawing.Size(578, 301);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.tb_id);
